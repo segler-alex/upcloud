@@ -1,0 +1,21 @@
+[package]
+name = "upcloud"
+version = "0.1.0"
+authors = ["segler <segler_alex@web.de>"]
+categories = ["development-tools", "api-bindings"]
+repository = "https://github.com/segler-alex/upcloud.git"
+homepage = "https://github.com/segler-alex/upcloud.git"
+documentation = "https://docs.rs/upcloud"
+description = "A pure Rust Upcloud API binding."
+edition = "2018"
+
+keywords = ["Upcloud", "IaaS", "API"]
+license = "MIT"
+readme = "README.md"
+
+[badges]
+maintenance = { status = "experimental" }
+
+[dependencies]
+reqwest = { version = "0.11.0", features = ["blocking", "json"] }
+serde = { version = "1.0.118", features = ["derive"] }
